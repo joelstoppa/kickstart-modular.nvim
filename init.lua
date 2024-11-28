@@ -99,6 +99,9 @@ vim.g.have_nerd_font = true
 -- Leave space when scrolling
 vim.opt.scrolloff = 10
 
+-- Explicit mapping for neo-tree
+vim.keymap.set('n', '\\', ':Neotree reveal<CR>', { desc = 'NeoTree reveal', silent = true })
+
 -- [[ Setting options ]]
 require 'options'
 
